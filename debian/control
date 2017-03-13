@@ -1,0 +1,28 @@
+Source: ruby-json
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Lucas Nussbaum <lucas@debian.org>,
+           Antonio Terceiro <terceiro@softwarelivre.org>,
+           Cédric Boutillier <boutil@debian.org>
+Build-Depends: debhelper (>= 9~),
+               gem2deb,
+               ruby-test-unit
+Standards-Version: 3.9.8
+Vcs-Git: https://anonscm.debian.org/git/pkg-ruby-extras/ruby-json.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-json.git
+Homepage: https://flori.github.com/json
+XS-Ruby-Versions: all
+
+Package: ruby-json
+Architecture: any
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Conflicts: ruby-json-pure
+Description: JSON library for Ruby
+ This library implements the JSON (JavaScript Object Notation) specification in
+ Ruby, allowing the developer to easily convert data between Ruby and JSON. You
+ can think of it as a low fat alternative to XML, if you want to store data to
+ disk or transmit it over a network rather than use a verbose markup language.

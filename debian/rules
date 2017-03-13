@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+
+export DH_RUBY_GEMSPEC=json.gemspec
+export GEM2DEB_TEST_RUNNER = --check-dependencies
+
+%:
+	dh $@ --buildsystem=ruby --with ruby
