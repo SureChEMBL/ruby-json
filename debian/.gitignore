@@ -1,0 +1,5 @@
+debhelper-build-stamp
+files
+ruby-json.debhelper.log
+ruby-json.substvars
+ruby-json/
